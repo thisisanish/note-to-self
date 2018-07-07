@@ -1,0 +1,9 @@
+<h1>Note-to-self</h1>
+<% message.forEach(function(instant){ %>
+    <li> <%= instant %></li>
+<% }) %>
+<br>
+<form action="/newmessage" method="POST">
+<input type="textarea" name="newmessage" placeholder="message" height="50px">
+<button>Submit!</button>
+</form>
